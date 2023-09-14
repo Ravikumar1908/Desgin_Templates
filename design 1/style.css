@@ -1,0 +1,357 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+
+}
+body{
+    font-size: 62.5%;
+    min-width: 1200px ;
+    margin:.5rem .5rem 0rem;
+
+}
+.main{
+background-image: url("https://templatemo.com/templates/templatemo_589_lugx_gaming/assets/images/banner-bg.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+border-radius: 0px 0px 10rem 10rem;
+}
+header{
+    position: sticky;
+    top:0px;
+    z-index: 200;
+}
+.navcontainer{
+    position: fixed;
+    top:0px;
+    backdrop-filter: blur(3px);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap:35rem;
+    padding: 2rem 5rem;
+    position: relative;
+    background-color: #0070f887;
+    color:white;
+    border-radius: 0em 0em 3em 3em;
+}
+.logo{
+    display:flex;
+    align-items: center;
+     gap: 1rem;
+     position: absolute;
+     left: 10rem;
+}    
+.logo a img{
+    width: 8rem;
+}
+
+.headlist{
+    margin-left: 30rem;
+    position: relative;
+}
+.headlist ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:4rem;
+}
+.headlist ul li {
+    list-style: none;
+    position: relative;
+
+
+}
+/* .headlist ul li::after{
+    width: 1rem;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.3rem;
+    border: .13rem solid rgb(14, 70, 235);
+    visibility: hidden;
+    transition: .3s ease;
+}
+.headlist ul li:hover::after{
+   visibility: visible;
+   transform: translate(2rem) scaleX(400%); 
+}
+*/
+/* .headlist ul li::before{
+    content: "";
+    width: 2rem;
+    height: 1rem;
+    position: absolute;
+    left: 0rem;
+    top:-.4rem;
+    border-top: .2rem solid pink;
+    border-left: .2rem solid cyan;
+    visibility: hidden;
+    transition:all .3s ease-in;
+    border-radius: 2rem;
+}
+.headlist ul li:hover::before{
+   visibility: visible;
+   width: 4rem;
+   height: 2rem;
+}
+.headlist ul li:hover::after{
+    visibility: visible;
+    width: 4rem;
+    height: 2rem;
+}
+.headlist ul li::after{
+    border-radius: 2rem;
+    content: "";
+    width: 2rem;
+    height: 1rem;
+    position: absolute;
+    right:  0rem;
+    bottom:-.4rem;
+    border-bottom: .2rem solid greenyellow;
+    border-right: .2rem solid orangered;
+    visibility: hidden;
+    transition: .3s ease-in;
+} */
+.headlist ul li a::before{
+    content:"";
+    position: absolute;
+    left: -.9rem;
+    bottom:-.5rem;
+    width:  .3rem; 
+    border-bottom: .3rem solid orangered;
+    visibility: hidden;
+    transition:.3s ease-in;
+}
+.headlist ul li a:hover::before{
+    visibility: visible;
+    width:100%;
+    transform: translateX(.8rem);
+}
+
+/* these above are the design for li hover.. */
+
+.headlist ul li a{
+    font-size: 1rem;
+     text-decoration: none;
+     color:white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: .5em 1em;
+    border-radius: 10em;
+}
+.headlist ul li a:hover{
+    transition: all .2s ease-in;
+    background-color: rgba(255, 255, 255, 0.1);
+    
+
+}
+.headlist ul li:nth-child(1) a{
+    background-color: rgba(255, 255, 255, 0.1);
+
+}
+.headlist ul li:nth-child(5) a{
+    background-color:orangered;
+}
+
+.maincontent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:5rem;
+    padding: 10rem 0px;
+}
+.textcontent{
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap:1.8rem;
+}
+.textcontent h6{
+    font-size: 1.4rem;
+    font-family:sans-serif;
+    font-weight:100;
+}
+.textcontent h2{
+    font-size: 2.3rem;
+    font-family:sans-serif;
+    font-weight:1000;
+    position: relative;
+}
+.textcontent h2::after{
+    position: absolute;
+    left: 120px;
+    top:43px;
+    content: "";
+    background-image: url('https://templatemo.com/templates/templatemo_589_lugx_gaming/assets/images/caption-dec.png');
+    width: 190px;
+    height: 12px;
+}
+.textcontent p{
+    width: 40rem;
+    line-height: 2rem;
+    font-size: 1.1rem;
+}
+.search {
+    display: inline-block;
+    width: 600px;
+    position: relative;
+    font-size: 1.2rem;
+}
+.search input{
+    font-size: 4rem;
+    height: 3rem;
+    width: 70%;
+    border-radius: 10rem 0rem 0rem 10rem;
+    border: none;
+    outline: none;
+    padding: .3rem 0rem .3rem 3rem;
+    font-size: 1.05em;
+}
+.search input:hover{
+    transition: .3s ease-in;
+    border: .15rem solid orangered;
+    box-shadow: 0px 0px 40px 3px rgba(0, 0, 0, 0.277);
+}
+.search input::placeholder{
+    font-size: 1.05rem;
+    
+}
+.search button{
+    cursor: pointer;
+    width: 200px;
+    height: 3rem;
+    font-size: 1rem;
+    position: absolute;
+    right: 0px;
+    border-radius: 10em;
+    border: none;
+    outline: none;
+    background-color: orangered;
+    color: white;
+}
+.search button:hover{
+    transition: all .2s ease-in;
+    background-color: #0071f8;
+    
+}
+
+
+.imagecontent{
+position: relative;
+}
+.imagecontent img{
+    width: 26rem;
+    border-radius: 4rem;
+}
+.imagecontent .price {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: white;
+    background-color: #0070f8c4;
+    padding: .2em .5em;
+    border-radius: 10em;
+    font-family:'Times New Roman', Times, serif;
+    position: absolute;
+    right:20px;
+    top:20px;
+}
+.imagecontent .offer {
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+    background-color: orangered;
+    padding: 1em .4em;
+    border-radius: 900px;
+    font-family:'Times New Roman', Times, serif;
+    position: absolute;
+    left:-25px;
+    bottom:-10px;
+}
+.feature{
+
+  position: relative;
+  height: auto;
+  background-color: pink;
+  margin-bottom: 15rem;
+}
+.featcont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+    margin-left: 14rem;
+    position: absolute;
+    top:-4rem;
+}
+.featcard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:.3rem;
+    border-radius: 2rem;
+    box-shadow: 0px 0px  5px 5px rgba(0, 0, 0, 0.168);
+    padding: 2rem 4rem;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.318);
+    border: .1em solid white;
+}
+
+.featcard:hover{
+    transition: .3s ease-in;
+    backdrop-filter: blur(5px);
+    border-color: black;
+}
+.featcard:hover img{
+    filter: saturate(2);
+}
+.featcard img{
+    width: 5rem;
+    
+}
+.featcard h4{
+    font-size: 1.1rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+.trending{
+    display: flex;
+    flex-direction: column;
+}
+.trendtitles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:56rem;
+}
+.trendtitle {
+    
+}
+.trendtitle h4{
+    font-size: 1.1rem;
+    color:orangered;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    
+}
+.trendtitle h2{
+    margin-top: 1.6rem;
+    font-size: 2.1rem;
+    color:black;
+}
+.trendallbtn h4{
+    font-size: .9rem;
+    color:white;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   padding: .8em 1.5em;
+   border-radius: 10em;
+   background-color: orangered;
+   text-transform: uppercase;
+   cursor: pointer;  
+}

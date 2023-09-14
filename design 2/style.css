@@ -1,0 +1,237 @@
+:root{
+    --main_color:#00b074;
+}
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+html{
+    font-size: 62.5%;
+}
+nav{
+    z-index: 100;
+    position: sticky;
+    top:0px;
+    margin-top: 2rem;
+    margin-inline: 1rem;
+    background-color: hsla(0, 0%, 100%, 0.291);
+    backdrop-filter: blur(5px);
+}
+.navcont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 3rem;
+}
+.navtitle a{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+    font-weight: 800;
+    color:var(--main_color);
+    text-decoration: none;
+}
+.navtitle{
+    
+}
+.navmenu{
+}
+.navmenu ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navmenu ul li{
+    list-style: none;
+    align-self: center;
+    margin-left: 2rem;
+}
+.navmenu ul li a{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.7rem;
+    padding: 2.5rem 2rem;
+    text-decoration: none;
+    color:black;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.navmenu ul li:nth-child(1) a{
+    color:var(--main_color);
+    padding: 2rem 5rem;
+}
+.navmenu .jobsdrop{
+    display: block;
+    position: relative;
+}
+.jobsdropdown{
+transition: all .3s ease-in;
+visibility: hidden;
+}
+.jobsdropdown ul {
+    border: 1px solid black;
+    background-color: rgba(128, 128, 128, 0.192);
+     width: 15rem;
+    display: block;
+    position: absolute;
+    bottom: -6rem;
+}
+.jobsdropdown ul li {
+    font-size: 1.6rem;
+   
+    margin-top: .3rem;
+}
+.jobsdrop:hover .jobsdropdown{
+    transition: 1ms ease-in;
+    width: 100%;
+    visibility: visible;
+    transform: scaleY(1.3);
+}
+
+.navmenu ul li:nth-child(6){
+    color:white;
+    padding: 2.5rem;
+    background-color: var(--main_color);
+}
+.navmenu ul li:nth-child(6) a {
+    padding: 2.5rem;
+}
+.navmenu ul li:hover:nth-child(6) a {
+    color:white;
+    padding: 2.5rem;
+}
+.navmenu ul li a:hover{
+    color:var(--main_color)
+}
+
+
+
+/* Header done here */
+
+
+
+
+main{
+}
+.maincont{
+    display: flex;
+    overflow:auto;
+    position: relative;
+}
+.firstcont{
+    background:url("https://cdn.pixabay.com/photo/2015/01/08/18/26/man-593333_1280.jpg") no-repeat center;
+    background-size: cover;
+    z-index: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap:6rem;
+    
+}
+.firstcont h1{
+    font-size: 7rem;
+    width: fit-content;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:white;
+    
+}
+.firstcont p{
+    font-size: 3rem;
+    width: fit-content;
+
+    color:white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.firstcontbtn{
+    display: flex;
+}
+.firstcontbtn h1{
+    margin-bottom: 4rem;
+    margin-right: 14rem;
+    font-size: 2rem;
+    padding: 1.3rem 2.5rem;
+    color:white;
+    font-weight: 400;
+    border:1px solid black;
+    background-color: #00b074;
+}
+.firstcontbtn h1:nth-child(2){
+background-color:rgb(61, 128, 229);
+}
+.firstcont button{
+    font-size: 2rem;
+    position: absolute;
+    right: 4%;
+    bottom: 2rem;
+    margin-top: 3rem;
+    color:white;
+    font-weight: bold;
+    outline: none;
+    border: noned;
+    padding: .31rem .62rem;
+    background-color: rgba(0, 255, 255, 0.24);
+}
+
+
+
+.secondcont{
+    position: absolute;
+    top:0px;
+    left:0px;
+    background:url("https://media.istockphoto.com/id/1413763041/photo/smiling-businesswoman-looking-up-while-working.webp?b=1&s=612x612&w=0&k=20&c=1Bb06scgWAGMO8mgsu84ptOmF1LGvH_UKudM9BBSVbQ=") no-repeat center;
+    background-size: cover;
+    z-index: -1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap:6rem;
+    
+}
+.secondcont h1{
+    font-size: 7rem;
+    width: fit-content;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:white;
+    
+}
+.secondcont p{
+    font-size: 3rem;
+    width: fit-content;
+
+    color:white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.secondcontbtn{
+    display: flex;
+}
+.secondcontbtn h1{
+    margin-bottom: 4rem;
+    margin-right: 14rem;
+    font-size: 2rem;
+    padding: 1.3rem 2.5rem;
+    color:white;
+    font-weight: 400;
+    border:1px solid black;
+    background-color:rgb(61, 128, 229);
+}
+.secondcontbtn h1:nth-child(2){
+background-color:var(--main_color);
+
+}
+.secondcont button{
+    font-size: 2rem;
+    position: absolute;
+    right: 4%;
+    bottom: 2rem;
+    margin-top: 3rem;
+    padding: .31rem .62rem;
+    background-color: rgba(0, 255, 255, 0.226);
+    color:white;
+    font-weight: bold;
+}
+

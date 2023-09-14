@@ -1,0 +1,441 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+}
+.html{
+    font-size: 62.5%;
+}
+.head{
+    margin:2rem 10rem 1.4rem;
+    animation: slidedown 500ms ease-in 0s 1 ;
+}
+@keyframes slidedown {
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0%);
+        
+    }
+    
+}
+.tophead{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+margin-bottom: 1.4rem;
+}
+.logo{
+
+}
+.logo a{
+    font-size: 1.6rem;
+    font-weight: 800;
+    text-decoration: none;
+    color:black;
+}
+.address{
+    display: flex;
+    justify-content: space-between;
+    gap:2rem;
+}
+.item{
+    display: flex;
+    align-items: center;
+    gap:1rem;
+}
+.item i{
+    font-size: 2rem;
+    background-color:#f0c48a ;
+    border-radius: 100px;
+    padding: 1rem;
+    transition: all ease 1s;
+    box-shadow: 3px 3px 4px black;
+}
+.item i:hover{
+    background-color:#e99c38 ;
+    box-shadow: 0px 0px 4px black;
+    transition: all ease .51s;
+    transform: scale(1.2) ;
+    
+}
+.addinfo{
+    font-size: 1.2rem;
+}
+.menuicon{
+    display: none;
+}
+.bottomhead{
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-top: 1.4rem;
+}
+.links{
+
+}
+.links ul{
+    display: flex;
+    gap:2rem;
+    list-style: none;
+}
+.links ul a{
+    color:black;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: 550;
+    transition: all ease 1s;
+}
+
+.links ul a:hover{
+    color: #f0c48a;
+    
+    transition: all ease .3s;
+    
+}
+.quote{
+    background-color:rgb(44, 40, 40);
+    color:#f0c48a;
+    font-weight: 700;
+    padding: 1.1rem 2.4rem;
+    letter-spacing: .1rem;
+}
+.dropdown{
+    display: none;
+}
+
+main{
+
+}
+.banner{
+    position: relative;
+    background-image: url("https://images.unsplash.com/photo-1600585152220-90363fe7e115?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8a2l0Y2hlbnxlbnwwfDB8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    width: 100%;
+    height: fit-content;
+}
+@keyframes colorchange {
+    0%{
+        opacity:0;
+        background-color: transparent;
+    }
+    100%{
+        transform: translateY(0%);
+        
+    }
+    
+}
+.bannerdetails{
+    animation: colorchange 1000ms ease 0s 1;
+    width: 100%;
+    padding-block:8rem;
+    height: 100%;
+    background-color: rgba(15, 16, 16, 0.609);
+}
+.details{
+    animation: slideleft 500ms cubic-bezier(0, 0.46, 0, 0.4) 0s 1 ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+    transition: all ease 1s;
+}
+@keyframes slideleft {
+    0%{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    
+}
+.bannerdetails h3{
+    cursor: pointer;
+    font-size: 3.4rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+    color:white;
+    text-align: center;
+}
+.bannerdetails p{
+    cursor: pointer;
+    color:white;
+    font-size: 1.4rem;
+}
+
+
+.modalbox{
+    margin-top: 6rem;
+    display: flex;
+    justify-content: center;
+    gap:2rem;
+    overflow: hidden;
+    position: relative;
+}
+.modaltext{
+    margin: auto 0rem;
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+}
+.modaltext{
+    width: 40%;
+}
+.modaltext>h3{
+    font-size:3rem;
+    color:#efae57
+}
+.modaltext>p{
+    width: 80%;
+    text-align: justify;
+    margin: 2rem auto;
+    font-size: 1.2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.modaltext >h6{
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    color:#f0c48a;
+}
+.modaltext >h4{
+    margin-top: 2rem;
+    font-size: 1rem;
+    background-color: #f0c48a;
+    color:white;
+    padding: 1rem 2rem;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.405);
+    transition: all ease .3s;
+}
+.modaltext >h4:hover{
+    cursor: pointer;
+    transition: all ease .3s;
+    margin-top: 2rem;
+    font-size: 1rem;
+    background-color:goldenrod;
+    color:white;
+    padding: 1rem 2rem;
+    box-shadow: 0px 0px 5px black;
+}
+.modalimg {
+    width:40% ;
+}
+.modalimg >img{
+    width:100% ;
+}
+
+
+.gallerybox{
+    background-color: #f9f7f5;
+    margin-top: 4rem;
+    padding-bottom: 4rem;
+}
+.gallerytext{
+    padding-block: 3rem;
+}
+.gallerytext h3{
+    width: fit-content;
+    font-size: 1.8rem;
+    color:#efae57;
+    margin-left: 5rem;
+}
+.galleryitemcontainer{
+    position: relative;
+    display: flex;
+    width: 100%;
+    gap:4rem;
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+}
+.galleryitemcontainer::-webkit-scrollbar {
+    display: none;
+}
+.galleryitem{
+    scroll-snap-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.galleryitem img{
+    width: 60rem;
+    height: 25rem;
+   
+}
+.galleryitem h4{
+    color:black;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.galleryitem p{
+    width: fit-content;
+    color:#efae57;
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: all ease .3s;
+    position: relative;
+}
+.galleryitem p::before{
+    content: "";
+    width: 0%;
+    position: absolute;
+    bottom: 0;
+    border:1px solid #efae57;
+}
+.galleryitem p:hover::before{
+    width: 100%;
+    transition: all ease .3s;
+    transform-origin:left ;
+    cursor: pointer;
+}
+.galleryscrollbutton{
+    position:relative;
+    bottom: 0;
+    left:0;
+    transition: all ease 1s;
+    text-align: center;
+}
+.galleryscrollbutton i{
+    width: fit-content;
+    margin-left: 5%;
+    margin-top: 1rem;
+    transition: all ease 1s;
+    color: #efae57;
+    filter: drop-shadow(2px 2px 2px black);
+}
+.galleryscrollbutton i:hover{
+    transition: all ease 1s;
+    transform: scale(1.2);
+    
+}
+.galleryscrollbutton i:active{
+    transform: translateX(30px);
+    transition: all ease 1s;
+
+}
+
+
+
+@media screen and (min-width:320px) and (max-width:768px) {
+    *{
+        width:100%;
+    }   
+    .head{
+        max-width: 100%;
+        margin-inline: 0rem;
+    }
+    .tophead{
+        width: 100%;
+        /* margin-inline: 1rem; */
+        display: flex;
+        justify-content: center;
+    }
+    .address{
+        display: none;
+    } 
+    .menuicon{
+        margin-right: 2rem;
+        width: fit-content;
+        transition: all ease 1s;
+        display: block;
+        float:right;
+      
+    }
+    .menuicon i{
+        transition: all ease 1s;
+        font-size: 2rem;
+    }
+    .menuicon i:active{
+        transition: all ease 300ms;
+        scale: 1.2;    
+    }
+    .bottomhead{
+        display: none;
+    }
+    .dropdown{
+        display: none;
+        z-index: 2;
+       
+        background-color: #efad5791;
+        
+    }
+    .links{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .links ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:1rem;
+        width: fit-content;
+        
+    }
+   .links li{
+    width: fit-content;
+   }
+   .banner{
+    min-width: 80%;
+   }
+.details{
+    align-items: center;
+    justify-content: center;
+gap:1rem;
+}
+.bannerdetails p{
+    text-align: center;
+}
+   .bannerdetails h3{
+    min-width: 150%;
+    font-size: 1.7rem;
+   }
+    
+   .modalbox{
+    flex-direction: column;
+   }
+   .modaltext{
+    margin-left: 5%;
+    width: 90%;
+    text-align: center;
+   }
+   .modaltext p{
+    margin-left: 5%;
+    width: 100%;
+    text-align: center;
+   }
+   .modalimg {
+    width: 90%;
+    margin-left: 5%;
+   }
+
+   .gallerybox{
+    width: 100%;
+   }
+   .gallerytext h3{
+    margin-left: 2rem;
+    font-size:1.3rem;
+   }
+.galleryitem img{
+    width:30rem;
+}
+.galleryitem{
+    text-align: center;
+}
+
+}
