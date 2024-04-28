@@ -1,0 +1,563 @@
+*{
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+html{
+    
+}
+body{
+    width: 100%;
+    font-size: 62.5%;
+}
+body h1{
+    font-size: 1.8em;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+}
+body h2{
+    font-size: 1.3em;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body p{
+    
+    color:rgb(160, 87, 53);
+    font-size: 1.2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+}
+body button{
+    color:white;
+    /* font-weight: bold; */
+    font-weight: 500;
+    font-size: 1.4rem;
+    font-family: serif;
+    height: fit-content;
+    padding-inline:1.2rem ;
+    outline: none;
+    border: none;
+    /* background-color: rgb(160, 53, 110); */
+    /* background-color: rgba(177, 46, 167, 0.841); */
+    background-color: rgba(173, 137, 46, 0.9);
+    border-radius: 2px;
+}
+.bigbtn{
+    color:black;
+    /* font-weight: bold; */
+    font-weight: 500;
+    font-size: 1.1rem;
+    font-family: serif;
+    height: 2.5rem;
+    padding-inline:3rem ;
+    outline: none;
+    border: none;
+    background-color: white;
+    border-radius: 2px;
+
+}
+body button:hover
+{
+    transition: all ease 300ms;
+    background-color: white;
+    color:rgba(173, 137, 46, 0.9);
+    border:1px solid rgba(173, 137, 46, 0.9);
+}
+.carimg{
+    width: 20rem;
+}
+
+
+
+/* navbar */
+nav{
+    padding-top: 1em;
+    
+    z-index: 102;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    /* left:50%; */
+    /* transform: translateX(-50%); */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.39);
+    backdrop-filter: blur(3px);
+    box-shadow: -5px -5px 55px black;
+    border-top: 2px solid rgba(255, 255, 255, 0.24);
+    color:white !important;
+}
+
+
+.floaticondiv>a{
+    text-decoration: none;
+    /* color:white; */
+}
+.floaticondiv{
+    padding-inline: auto;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+    /* margin-inline: 1rem; */
+    /* text-align: center; */
+    /* padding: 0px 1.2em 0px; */
+    /* border-radius: 0px 0px 10% 10%; */
+    /* background-color: rgba(128, 128, 128, 0.326); */
+    position: relative;
+}
+/* .floaticondiv:hover{
+    border-radius: 3rem;
+    background-color: rgba(255, 255, 255, 0.46);
+} */
+
+.floaticondiv::after{
+    position: absolute;
+    bottom: 0;
+    left:0%;
+    width: 2%;
+   border-bottom: 10px solid  rgba(61, 46, 173, 0.9);
+    content: "";
+    color:rgba(173,137,46,09);
+    visibility: hidden;
+    transition: all cubic-bezier(0.19, 1, 0.82, 1) 400ms;
+}
+.floaticondiv:hover::after{
+    transform: translateX(0%);
+    position: absolute;
+    left:50%;
+    visibility: visible;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 400ms;
+    transform: scaleX(50);
+}
+.navP{
+    color:white;
+}
+.floaticondiv>a:hover .navP{
+    color: rgb(66, 59, 175);
+}
+
+
+.ourbestcars{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.contain{
+    display: flex;flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    width: 100%;
+}
+.contain>button{
+    
+    width: fit-content;
+}
+.contain>p{
+    text-align: center;
+}
+.main2{
+    gap:5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding-block: 2rem;
+    /* background-color: rgb(19, 19, 89); */
+    background-image: url("https://images.pexels.com/photos/2224561/pexels-photo-2224561.jpeg?auto=compress&cs=tinysrgb&w=800");
+    /* background-image: url("https://wallpapercave.com/wp/wp7458585.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all ease 300ms;
+    background-attachment: fixed;
+    background-position: center;
+}
+.carimg{
+    width: 90%;
+    filter: saturate(0.5);
+    cursor: pointer;
+    transition: all ease 300ms;
+    mix-blend-mode: multiply;
+    /* margin: 20px 20px; */
+    /* justify-content: center; */
+    /* background-color: aqua; */
+}
+
+.main3:hover .carimg{
+    
+    filter: saturate(1.5);
+    transform: scale(1.2) ;
+    transition: all ease 500ms;
+}
+.main3{
+    overflow: hidden;
+    padding-top: 2rem;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    /* width: 25%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:2rem;
+    
+}
+
+
+
+
+
+/* ravi css */
+.favCars{
+    width: 100%;
+    padding: 0rem 5rem;
+    
+}
+.favCars
+.favCars>h1,p{
+    margin: 1rem 0rem;
+}
+.carscont{
+    width: 100%;
+    display: flex;align-items: center; 
+    justify-content: center;
+    margin-block:4rem;
+}
+.cardiv{
+    padding: 4rem 0rem;
+    overflow: hidden;
+    /* margin-left: 3%; */
+    /* width: fit-content; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:5rem;
+}
+
+.carcard{
+    background-color: rgb(230, 230, 230);
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    cursor: pointer;
+    width: 30rem;
+    transition: all ease 300ms;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.345);
+}
+.carcard>p{
+    /* width: 50%; */
+}
+.carcard>img{
+
+}
+.carcard:nth-child(odd):hover{
+
+    box-shadow: 5px 1px 5px rgba(0, 0, 0, 0.945);
+    transition: all ease 300ms;
+    transform: skewY(5deg) skewX(-5deg);
+    perspective: 20%;
+}
+.carcard:nth-child(even):hover{
+    
+    transform: skewY(5deg) skewX(-5deg);
+    box-shadow: 5px 1px 5px rgba(0, 0, 0, 0.945);
+    transition: all ease 300ms;
+}
+
+    
+.carcard img{
+    padding: 2rem 0rem;
+    width: 20rem;
+    mix-blend-mode: multiply;
+}
+.carcard p{
+    margin:1rem 3rem 3rem;
+}
+
+.carabout{
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutrightdiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.aboutrightdiv>p{
+    width: 30ch;
+    text-align: center;
+}
+.aboutleftdiv>img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+/* rkg section */
+.mainsection {
+    width: 100%;
+    height: 10%;
+    background-color: red;
+
+}
+.cont{
+    margin-block: 3rem;
+    margin-left: 5rem;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;flex-wrap: wrap;
+    gap: 2rem;
+    
+}
+.card p:nth-of-type(2){
+    text-align: left;
+    
+}
+
+
+/* rkg section */
+.card img{
+    overflow: hidden;
+}
+.card {
+    overflow: hidden;    
+    background-color: black;
+    /* transition: all ease 300ms; */
+    box-shadow: 5px 5px 7px 0px #0000003f;
+    /* animation: scaleImage 5s linear infinite; */
+    margin-bottom: 5rem;
+
+}
+
+
+
+
+
+
+
+
+/*------ ravi part ------- */
+.Customercont{
+    margin-bottom: 6rem;
+    padding-block: 5rem;
+    padding-inline: 5rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: black; */
+    background-attachment: fixed;
+    background-position: center;
+    background-image: url("https://wallpapercave.com/wp/wp8076050.jpg");
+}
+.Customercont>h1, .customercard>p{
+    color:rgb(255, 255, 255);
+    text-align: left;
+}
+.cards{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
+.customercard{
+    /* border-radius: 15px; */
+    /* border: 1px solid gray; */
+    transition: all ease 400ms;
+    position: relative;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.customercard>p::selection{
+    color:black;
+    background-color:yellow;
+}
+.customercard p{
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    padding:2rem 2rem;
+    cursor: pointer;
+    box-shadow: 3px 3px   15px  rgba(0, 0, 0, 0.281);
+    background-color: rgba(97, 96, 96, 0.196);
+    
+}
+.customercard p:hover{
+    background-color: rgba(0, 0, 0, 0.521);
+}
+.customercard:hover img{
+    transform: scale(1.2);
+    transition: all ease 4s;
+}
+.customercard img{
+    filter: invert();
+    width: 5rem;
+}
+.customercard figcaption {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: larger;
+    color:white;
+}
+.customercard:hover{
+    /* background-color: black; */
+    transition: all ease 400ms;
+}
+.customercard p::after{
+    width: 1%;
+    content: "";
+    border-bottom: 10px solid gold;
+    position: absolute;
+    top:98.5%;
+    left:50.05%;
+    visibility: hidden;
+    transition: all ease 400ms;
+    
+    
+}
+.customercard p:hover::after{
+    transform: scaleX(102);
+    visibility: visible;
+    transition: all ease 400ms;
+}
+/* sujal part2 */
+
+/* .bigbtn {
+    background-color: red;
+} */
+
+footer {
+    padding-inline: 5rem;
+    padding-block: 5rem;
+    align-items: center;
+    /* margin-left: 5rem; */
+    text-align: center;
+    /* background-color: rgb(232, 215, 203); */
+    background-image: url("https://img.freepik.com/free-vector/car-drive-mountain-road-trip-with-summer-landscape-background-cartoon-highway-traffic-journey-with-beautiful-nature-horizon-speed-vehicle-motion-asphalt-path-ride-sunny-weekend-holiday_107791-24035.jpg?t=st=1714250509~exp=1714254109~hmac=0033f7bcdfdd5c690a3012bcef09af5858f6e3c500db8b7c979292a63fa5d4e8&w=2000");
+    /* display: flex; */
+    background-size: cover;
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.formcont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    margin-top: 2rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.names{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.names input:nth-child(1), .names input:nth-child(2)
+{
+    width: 50%
+}
+footer input{
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin:1rem;
+    padding-left: 1rem;
+    height: 3rem;
+}
+footer input:focus{
+    border:1px solid red;
+}
+.form input[type="number"]::-webkit-inner-spin-button
+{
+    display: none;
+}
+.form>button{
+    align-self: center;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:720px){
+    body h1 ,body h2{
+        font-size: 130%;
+        font-weight: bold;
+    }
+    body p{
+        font-style: italic;
+    }
+    .favCars{
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+    .carcard:nth-child(odd):hover{
+
+    
+        transform: skewY(0) skewX(-0);
+    }
+    .carcard:nth-child(even):hover{
+    
+        transform: skewY(0) skewX(-0);
+    }
+    .carcard:focus{
+        box-shadow: 5px 1px 5px rgba(0, 0, 0, 0.945);
+    }
+     .customercont>p{
+        font-size: 1rem;
+    }
+    .customercard>p{
+        padding: 1rem;
+        font-size: 10px;
+    }
+    .customercard>img{
+        width: 10%;
+    }
+    .formcont{
+        width: 100%;
+        display: block;
+    }
+    .names{
+        display: block;
+    }
+    .form{
+        width: 100%;
+        transform: translateX(-5%);
+    }
+    footer input{
+        width: 100%;
+    }
+    .names input:nth-child(1), .names input:nth-child(2)
+{
+    width: 100%
+}
+}
