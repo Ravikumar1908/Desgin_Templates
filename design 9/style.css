@@ -345,7 +345,7 @@ nav{
     overflow: hidden;    
     background-color: black;
     /* transition: all ease 300ms; */
-    box-shadow: 5px 5px 7px 0px #0000003f;
+/*     box-shadow: 5px 5px 7px 0px #0000003f; */
     /* animation: scaleImage 5s linear infinite; */
     margin-bottom: 5rem;
     transition: all cubic-bezier(0.25, 0.46, 1, 0.94) 400ms;
