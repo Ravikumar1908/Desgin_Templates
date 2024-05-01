@@ -5,7 +5,7 @@
     scroll-behavior: smooth;
 }
 html{
-    
+    user-select:none;
 }
 body{
     width: 100%;
